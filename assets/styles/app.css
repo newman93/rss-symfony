@@ -1,8 +1,6 @@
 html, body {
-    background-color: skyblue;
+    background-color: black !important;
     height: 100%; 
-    background-image: url('../images/denim.webp');
-    background-repeat: repeat;
 }
 
 .container{       
@@ -10,21 +8,24 @@ html, body {
     width: 100vw;
 }
 
+.container-white {
+    background-color: white;
+}
+
 .login {
-    border: 1px solid black;
+    border: 1px solid darkgrey;
     width: 80%;
     height: 60%;
     border-radius: 15px;
 }
 
 .login-description {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: white;
     border-radius: 15px 0px 0px 15px;
-    color: white;
-    
+    border-right: 1px solid darkgrey;    
 }
 
 .login-form {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: white;
     border-radius: 0px 15px 15px 0px;
 }
