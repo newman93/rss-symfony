@@ -1,15 +1,13 @@
 html, body {
-    background-color: black !important;
+    background-color: #2a2438 !important;
     height: 100%; 
+    color: #dbd8e3 !important;
 }
 
 .container{       
     height: 100vh;       
     width: 100vw;
-}
-
-.container-white {
-    background-color: white;
+    background-color: #352f44 !important;
 }
 
 .login {
@@ -19,13 +17,18 @@ html, body {
     border-radius: 15px;
 }
 
+.card {
+    background-color: #5c5470 !important;
+    color: #dbd8e3 !important;
+}
+
 .login-description {
-    background-color: white;
+    background-color: #5c5470;
     border-radius: 15px 0px 0px 15px;
     border-right: 1px solid darkgrey;    
 }
 
 .login-form {
-    background-color: white;
+    background-color: #5c5470;
     border-radius: 0px 15px 15px 0px;
 }
