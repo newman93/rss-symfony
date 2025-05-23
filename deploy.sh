@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-cd "$REMOTE_PATH"
+cd "$1"
 # Update kodu
 git pull origin main
 # itd.
