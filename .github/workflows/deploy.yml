@@ -15,8 +15,7 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Run deploy script on remote server
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-          APP_SECRET: ${{ secrets.APP_SECRET }}
+          REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} \
             "cd ${{ secrets.REMOTE_PATH }} && ./deploy.sh ${{ secrets.REMOTE_PATH }}"
