@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body%}
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">RSS Reader</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My RSS list</a>
+                </li>
+            </ul>
+            <form class="d-flex p-2">
+                <button class="btn btn-dark" type="submit">Login</button>
+            </form>
+            <form class="d-flex">
+                <button class="btn btn-dark" type="submit">Register</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+    {% block content %}
+    
+    {% endblock %}
+
+    <div class="container container-footer w-100"> 
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> 
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Powered by <a href="https://kowalskiadrian.pl">kowalskiadrian.pl</span> 
+            </div> 
+        </footer> 
+    </div>
+{% endblock %}

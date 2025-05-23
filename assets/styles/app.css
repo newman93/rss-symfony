@@ -1,3 +1,42 @@
-body {
-    background-color: skyblue;
+html, body {
+    background-color: #2a2438 !important;
+    height: 100%; 
+    color: #dbd8e3 !important;
+}
+
+.container-login{       
+    height: 100vh;       
+    width: 100vw;
+}
+
+.container {       
+    background-color: #352f44 !important;
+}
+
+.container-footer {
+    background-color: #f8f9fa !important;
+}
+
+
+.login {
+    border: 1px solid darkgrey;
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+}
+
+.card {
+    background-color: #5c5470 !important;
+    color:  #dbd8e3 !important;
+}
+
+.login-description {
+    background-color: #5c5470;
+    border-radius: 15px 0px 0px 15px;
+    border-right: 1px solid darkgrey;    
+}
+
+.login-form {
+    background-color: #5c5470;
+    border-radius: 0px 15px 15px 0px;
 }

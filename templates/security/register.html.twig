@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+     <div class="container container-login h-100">
+            <div class="d-flex h-100 justify-content-center align-items-center">
+                <div class="d-flex login">
+                    <div class="p-2 w-50 login-box login-description">
+                        <h4 class="text-center p-5">Welcome in RSS reader</h4>
+                        <p class="p-4">
+                          This modern tool helps you stay up to date with the latest news and information. 
+                          Thanks to an intuitive admin panel, you can easily add RSS channels, which are automatically organized by topics and languages. 
+                          The latest updates are conveniently displayed, sorted by publication date, category, and language.
+                          This platform makes it easy to follow subjects you’re interested in, both in your native language and others you want to explore. 
+                          Start using it now and discover a new, convenient way to access information from around the world!
+                    
+                    </div>
+                    <div class="p-2 w-50 login-box login-form">
+                        {{ form_start(registrationForm) }}
+                            {{ form_errors(registrationForm) }}
+                            <h4 class="p-5 text-center">Register</h1>
+                            <div class="row p-5 w-90">
+                                <div class="mb-3">
+                                    {{ form_row(registrationForm.email) }}
+                                </div>
+                                <div class="mb-3">
+                                    {{ form_row(registrationForm.plainPassword, {
+                                        label: 'Password'
+                                    }) }}
+                                </div>    
+                                <div class="mb-3"> 
+                                    <button class="btn btn-lg btn-dark" type="submit">
+                                        Register
+                                    </button>
+                                </div>    
+                            </div>
+                        {{ form_end(registrationForm) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
