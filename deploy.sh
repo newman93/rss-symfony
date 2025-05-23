@@ -4,9 +4,9 @@ cd "$1"
 # Update kodu
 git pull origin main
 # Instalacje backend
-composer install --no-interaction --prefer-dist --optimize-autoloader
+docker exec symfony_rss_apache bash -c "composer install --no-interaction --prefer-dist --optimize-autoloader"
 # Migruj bazę 
-php bin/console doctrine:migrations:migrate --no-interaction --allow-no-migration
+docker exec symfony_rss_apache bash -c "php bin/console doctrine:migrations:migrate --no-interaction --allow-no-migration"
 # Frontend build 
-npm install
-npm run build
+docker exec symfony_rss_apache bash -c "npm install"
+docker exec symfony_rss_apache bash -c "npm run build"
