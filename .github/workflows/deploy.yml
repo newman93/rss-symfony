@@ -19,7 +19,7 @@ jobs:
             --exclude=node_modules \
             --exclude=var \
             ./ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}      
-      - name: Run deploy script on server
+      - name: Run deploy script on remote server
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           APP_SECRET: ${{ secrets.APP_SECRET }}
