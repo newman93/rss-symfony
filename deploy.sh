@@ -7,6 +7,6 @@ git pull origin main
 composer install --no-interaction --prefer-dist --optimize-autoloader
 # Migruj bazę 
 php bin/console doctrine:migrations:migrate --no-interaction --allow-no-migration
-# Frontend build
+# Frontend build 
 npm install
 npm run build
