@@ -18,11 +18,11 @@ jobs:
         with:
             SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
             ARGS: "-rlgoDzvc -i --delete"
-            SOURCE: "dist/"
+            SOURCE: "./"
             REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
             REMOTE_USER: ${{ secrets.REMOTE_USER }}
             TARGET: ${{ secrets.REMOTE_PATH }}
-            EXCLUDE: "/dist/, /node_modules/"    
+            EXCLUDE: "/node_modules/"    
       - name: Run deploy script on remote server
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
