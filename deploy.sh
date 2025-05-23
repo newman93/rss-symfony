@@ -6,7 +6,7 @@ git pull origin main
 # itd.
 # Instalacje backend
 composer install --no-interaction --prefer-dist --optimize-autoloader
-# Migruj bazę
+# Migruj bazę 
 php bin/console doctrine:migrations:migrate --no-interaction --allow-no-migration
 # Frontend build
 npm install
