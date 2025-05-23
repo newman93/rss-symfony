@@ -9,6 +9,7 @@ docker container start "$2"
 
 URL="https://$3"
 TIMEOUT_MIN=10
+sleep 120
 SLEEP_SEC=5
 end=$((SECONDS+TIMEOUT_MIN*60))
 while [ $SECONDS -lt $end ]; do
