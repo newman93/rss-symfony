@@ -3,7 +3,6 @@ set -e
 cd "$1"
 # Update kodu
 git pull origin main
-# itd.
 # Instalacje backend
 composer install --no-interaction --prefer-dist --optimize-autoloader
 # Migruj bazę 
