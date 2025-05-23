@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-cd \$1
+cd "$1"
 # Update kodu
 git pull origin main
 # Ustaw zmienne środowiskowe — najlepiej NIE commituj .env, tylko .env.example!
